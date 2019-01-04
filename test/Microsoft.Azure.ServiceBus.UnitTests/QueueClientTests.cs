@@ -77,7 +77,6 @@ namespace Microsoft.Azure.ServiceBus.UnitTests
             }
         }
 
-
         [Theory]
         [MemberData(nameof(TestPermutations))]
         [DisplayTestMethodName]

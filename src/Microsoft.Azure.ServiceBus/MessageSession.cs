@@ -249,6 +249,5 @@ namespace Microsoft.Azure.ServiceBus
                 this.diagnosticSource.RenewSessionLockStop(activity, this.SessionId, renewTask?.Status);
             }
         }
-
     }
 }

@@ -7,7 +7,6 @@ namespace Microsoft.Azure.ServiceBus
     using System.Collections.Generic;
     using System.Diagnostics.Tracing;
     using System.Reflection;
-    using System.Text;
     using System.Threading.Tasks;
     using Microsoft.Azure.Amqp;
     using Microsoft.Azure.ServiceBus.Amqp;
@@ -1379,14 +1378,6 @@ namespace Microsoft.Azure.ServiceBus
             {
                 this.WriteEvent(117, objectName, details);
             }
-        }
-    }
-
-    internal static class TraceHelper
-    {
-        public static string GetAsciiString(this ArraySegment<byte> arraySegment)
-        {
-            return arraySegment.Array == null ? string.Empty : Encoding.ASCII.GetString(arraySegment.Array, arraySegment.Offset, arraySegment.Count);
         }
     }
 }

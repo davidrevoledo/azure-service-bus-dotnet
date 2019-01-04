@@ -219,7 +219,6 @@ namespace Microsoft.Azure.ServiceBus.UnitTests
             bool receiverReturnedInTime = false;
             using (var timeoutCancellationTokenSource = new CancellationTokenSource())
             {
-
                 var completedTask = await Task.WhenAny(quickTask, Task.Delay(10000, timeoutCancellationTokenSource.Token));
                 if (completedTask == quickTask)
                 {
@@ -451,7 +450,6 @@ namespace Microsoft.Azure.ServiceBus.UnitTests
                 await sender.SendAsync(message);
                 recivedMessage = await receiver.ReceiveAsync().ConfigureAwait(false);
                 Assert.True(Encoding.UTF8.GetString(recivedMessage.Body) == Encoding.UTF8.GetString(messageBody));
-
             }
             finally
             {

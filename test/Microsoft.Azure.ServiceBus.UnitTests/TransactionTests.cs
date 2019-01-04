@@ -526,6 +526,5 @@ namespace Microsoft.Azure.ServiceBus.UnitTests
                 await destination2Receiver.CloseAsync();
             }
         }
-
     }
 }

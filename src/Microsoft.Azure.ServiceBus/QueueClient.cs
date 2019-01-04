@@ -296,8 +296,6 @@ namespace Microsoft.Azure.ServiceBus
                                 this.CbsTokenProvider,
                                 this.RetryPolicy,
                                 this.RegisteredPlugins);
-
-
                         }
                     }
                 }

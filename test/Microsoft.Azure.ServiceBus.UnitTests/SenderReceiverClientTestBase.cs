@@ -127,7 +127,6 @@ namespace Microsoft.Azure.ServiceBus.UnitTests
             TestUtility.Log("Sleeping 10 seconds...");
             await Task.Delay(TimeSpan.FromSeconds(10));
 
-
             await messageReceiver.RenewLockAsync(message);
             TestUtility.Log($"After First Renewal: {message.SystemProperties.LockedUntilUtc}");
             Assert.True(message.SystemProperties.LockedUntilUtc >= firstLockedUntilUtcTime + TimeSpan.FromSeconds(10));

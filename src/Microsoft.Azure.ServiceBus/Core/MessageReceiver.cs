@@ -376,7 +376,6 @@ namespace Microsoft.Azure.ServiceBus.Core
                             .ConfigureAwait(false);
                     }, operationTimeout);
                 await receiveTask.ConfigureAwait(false);
-
             }
             catch (Exception exception)
             {
@@ -585,7 +584,6 @@ namespace Microsoft.Azure.ServiceBus.Core
             {
                 this.diagnosticSource.DisposeStop(activity, lockToken, abandonTask?.Status);
             }
-
 
             MessagingEventSource.Log.MessageAbandonStop(this.ClientId);
         }

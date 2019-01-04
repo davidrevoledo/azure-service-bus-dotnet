@@ -60,7 +60,6 @@ namespace Microsoft.Azure.ServiceBus.Diagnostics
         /// any nested method call (sync or async) - <see cref="Activity.Current"/> is an ambient context that flows with async method calls.
         /// 
         /// </example>
-
         public static Activity ExtractActivity(this Message message, string activityName = null)
         {
             if (message == null)

@@ -34,7 +34,6 @@ namespace Microsoft.Azure.ServiceBus
             }
         }
 
-
         static RuleAction ParseFromXElementSqlRuleAction(XElement xElement)
         {
             var expression = xElement.Element(XName.Get("SqlExpression", ManagementClientConstants.SbNs))?.Value;

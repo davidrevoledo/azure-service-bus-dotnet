@@ -55,5 +55,4 @@ namespace Microsoft.Azure.ServiceBus.Amqp.Framing
                    AmqpCodec.GetIntEncodeSize(this.CompatibilityLevel);
         }
     }
-
 }

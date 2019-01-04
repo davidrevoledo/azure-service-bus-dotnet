@@ -619,7 +619,6 @@ namespace Microsoft.Azure.ServiceBus.Core
                         }
 
                         return sequenceNumbers[0];
-
                     }
                     else
                     {
